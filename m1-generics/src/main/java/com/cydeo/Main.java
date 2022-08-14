@@ -25,10 +25,15 @@ public class Main {
         BaseballPlayer pat = new BaseballPlayer("Pat");
         SoccerPlayer beckham = new SoccerPlayer("Beckham");
 
-        Team liverpool = new Team("Liverpool"); //Team accepting any object
-        liverpool.addPlayer(joe);
-        liverpool.addPlayer(pat);
-        liverpool.addPlayer(beckham);
+        Team<SoccerPlayer> liverpool = new Team("Liverpool"); //Team accepting any object
+
+
+//        liverpool.addPlayer(joe);
+//        liverpool.addPlayer(pat);
+          liverpool.addPlayer(beckham);
+
+
+
 
 
 
