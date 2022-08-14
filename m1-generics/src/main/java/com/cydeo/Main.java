@@ -18,9 +18,6 @@ public class Main {
 
         printDoubled(items);
 
-
-
-
     }
 
     private static void printDoubled(ArrayList<Integer> items) {
