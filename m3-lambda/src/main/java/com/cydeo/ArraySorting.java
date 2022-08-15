@@ -1,6 +1,7 @@
 package com.cydeo;
 
 import java.lang.reflect.Array;
+import java.util.function.Predicate;
 
 public class ArraySorting { //QuickSort,BubbleSort
 
@@ -13,6 +14,15 @@ public class ArraySorting { //QuickSort,BubbleSort
 
         as.sort(qs);
         as.sort(bs);
+
+        Sorting quickSort = () -> System.out.println("Quick Sorting");
+        as.sort(quickSort);
+
+        as.sort(() -> System.out.println("Quick Sorting"));
+
+
+
+
 
     }
 
