@@ -3,6 +3,6 @@ package com.cydeo;
 public class AppleGreenColorPredicate implements ApplePredicate{
     @Override
     public boolean test(Apple apple) {
-        return app;
+        return apple.getColor().equals(Color.GREEN);
     }
 }
