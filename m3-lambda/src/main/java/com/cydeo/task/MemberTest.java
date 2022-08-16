@@ -21,10 +21,6 @@ public class MemberTest {
 
         print(personList,p -> p.getGender()==Gender.MALE && p.getAge() >=18 && p.getAge()<=25);
 
-
-
-
-
     }
 
     private static void print(List<Person> personList,CheckMember checkMember){
