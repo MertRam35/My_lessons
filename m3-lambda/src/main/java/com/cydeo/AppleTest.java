@@ -29,6 +29,9 @@ public class AppleTest {
 
     }
 
+    //Task
+    //Convert to ready functional interface
+
     private static List<Apple> filterApples(List<Apple> inventory,ApplePredicate applePredicate){  //
 
         List<Apple> result = new ArrayList<>();
