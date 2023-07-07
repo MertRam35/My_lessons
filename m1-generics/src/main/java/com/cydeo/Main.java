@@ -22,7 +22,7 @@ public class Main {
         System.out.println("***********************");
 
         FootballPlayer joe = new FootballPlayer("joe");
-        BaseballPlayer pat = new BaseballPlayer("Pat");
+        BaseballPlayer pat = new BaseballPlayer("pat");
         SoccerPlayer beckham = new SoccerPlayer("Beckham");
 
         Team<SoccerPlayer> liverpool = new Team("Liverpool"); //Team accepting any object
