@@ -2,13 +2,14 @@ package com.quiz;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.BiPredicate;
 
 public class CountValues {
 
 
     public static void main(String[] args) {
 
-        List<Integer> ci = Arrays.asList(1, 2, 3, 4,6,7);
+        List<Integer> ci = Arrays.asList(1, 2, 3, 4, 6, 7);
 
         int count = countIf(ci, new OddPredicate());
         System.out.println(count);
@@ -16,12 +17,14 @@ public class CountValues {
 
     }
 
-    static int countIf(List<Integer> ci, OddPredicate oddPredicate) {
+    static <T> int countIf(List<T> ci, UnaryPredicate<T> predicate) {
         int result = 0;
-        for (Integer integer : ci) {
-            if (oddPredicate.test(integer)) result++;
+        for (T t : ci) {
 
-       }
+            if (predicate.test(t)) result++;
+
+        }
         return result;
+
     }
 }
