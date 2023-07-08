@@ -1,10 +1,9 @@
 package com.cydeo;
 import lombok.*;
-
-@Getter
-@Setter
-@ToString
+@Data
 @AllArgsConstructor
+@RequiredArgsConstructor()
+
 public class Apple {
 
     private int weight;
