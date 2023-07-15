@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.task.Dish;
 import org.example.task.DishData;
+import org.example.task.Type;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -88,6 +89,20 @@ public class CollectorsDemo {
         String str2 = String.join(", ", courses);//same output
         System.out.println(str);
         System.out.println(str2);
+
+
+        System.out.println("partitioningBy() is acceps boolean return map  object");
+
+        Map<Boolean, List<Dish>> booleanListMap = DishData.menu.stream()
+                .collect(partitioningBy(Dish::isVegetarian));
+        System.out.println(booleanListMap);
+
+        System.out.println("groupingBy(): is used for grouping objects by some property and storing in a Map instance");
+
+        Map<Type, List<Dish>> typeListMap = DishData.menu.stream()
+                .collect(groupingBy(Dish::getType));
+        System.out.println(typeListMap);
+
 
     }
 
