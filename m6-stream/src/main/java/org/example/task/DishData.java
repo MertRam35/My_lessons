@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public  class DishData {
-static     List<Dish> menu = Arrays.asList(
+ public static     List<Dish> menu = Arrays.asList(
             new Dish("pork",false,800,Type.MEAT),
             new Dish("beef",false,700,Type.MEAT),
             new Dish("chicken",false,400,Type.MEAT),
